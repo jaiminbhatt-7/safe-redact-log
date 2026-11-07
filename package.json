@@ -1,0 +1,52 @@
+{
+  "name": "safe-redact-log",
+  "version": "1.0.0",
+  "description": "Zero-dependency deep redaction of passwords, tokens, JWTs, card numbers and other secrets so objects, errors and HTTP requests are safe to log.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "example": "node examples/basic.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "redact",
+    "mask",
+    "sanitize",
+    "logging",
+    "logger",
+    "secrets",
+    "pii",
+    "security",
+    "express",
+    "jwt"
+  ],
+  "author": "jaimin bhatt <mrdexy6@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaiminbhatt-7/safe-redact-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaiminbhatt-7/safe-redact-log/issues"
+  },
+  "homepage": "https://github.com/jaiminbhatt-7/safe-redact-log#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
